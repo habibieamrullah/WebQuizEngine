@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>zkQuiz by Zofia Kreasi</title>
+		<script src="jquery.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<style>
+			body{
+				font-family: arial;
+				background-color: #eaeaea;
+			}
+			input{
+				margin-top: 5px;
+				margin-bottom: 5px;
+				padding: 5px;
+				width: 100%;
+				border-radius: 3px;
+				border: 1px solid grey;
+			}
+			button{
+				padding: 10px;
+				border: none;
+				color: white;
+				background-color: black;
+				border-radius: 3px;
+				border: 1px solid grey;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="output" style="height: 150px; overflow-y: auto; border: 1px solid black; font-family: courier; color: lime; background-color: black; padding: 10px; margin-bottom: 10px; font-size: 12px;">Ready...</div>
+		Question: <br>
+		<input id="question" placeholder="Question"><br>
+		A1: <br><input id="a1" placeholder="Answer 1"><br>
+		A2: <br><input id="a2" placeholder="Answer 2"><br>
+		A3: <br><input id="a3" placeholder="Answer 3"><br>
+		A4: <br><input id="a4" placeholder="Answer 4"><br>
+		CA<br>
+		<input id="ca" placeholder="Correct answer (Number Only)"><br>
+		<button onclick="submit()">Add</button>
+		<script>
+			var questions = [];
+			function submit(){
+				questions.push({ q : $("#question").val().replace(/'/g, "\\'") , ca : parseInt($("#ca").val()), a : [ $("#a1").val().replace(/'/g, "\\'"), $("#a2").val().replace(/'/g, "\\'"), $("#a3").val().replace(/'/g, "\\'"), $("#a4").val().replace(/'/g, "\\'") ]});
+				$("#output").html(JSON.stringify(questions));
+				$("#a1").val("");
+				$("#a2").val("");
+				$("#a3").val("");
+				$("#a4").val("");
+				$("#ca").val("");
+				$("#question").val("").focus();
+			}
+		</script>
+	</body>
+</html>

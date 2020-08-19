@@ -1,0 +1,144 @@
+@font-face {
+    font-family: myfont;
+    src: url(Alegreya-Regular.ttf);
+}
+
+body{
+	font-family: myfont;
+	color: #6d6d6d;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, p{
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+#socialshare{
+	display: none;
+}
+
+#appbar{
+	padding: 20px;
+	background-color: #ed1c2f;
+	color: white;
+}
+
+#mainscreen{
+	background-color: #f9f9f9;
+	top: 50px;
+	padding: 15px;
+	padding-top: 20px;
+	overflow-y: auto;
+	background-image: url("bg.jpg");
+    background-repeat: repeat;
+	padding-bottom: 60px;
+}
+
+#drawer{
+	background-color: #303030;
+	position: fixed;
+	width: 250px;
+	color: white;
+	top: 62px;
+	left: -250px;
+	bottom: 0;
+	padding-top: 10px;
+	padding-bottom: 70px;
+	overflow: auto;
+}
+
+.choice{
+	border: 1px solid #ed1c2f;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 3px;
+	background-color: white;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.13);
+}
+
+.choice:active{
+	background-color: #ed1c2f;
+	color: white;
+}
+
+#notification{
+	background-color: rgba(0,0,0,.75);
+	color: white;
+	border-radius: 35px;
+	padding: 5px;
+	position: fixed;
+	left: 30px;
+	bottom: 80px;
+	right: 30px;
+	text-align: center;
+	display: none;
+	box-shadow: 0 14px 18px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+}
+
+button{
+	border: 1px solid #ed1c2f;
+	color: black;
+	background-color: white;
+	border-radius: 3px;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.13);
+	outline: none;
+	margin-right: 5px;
+	min-width: 120px;
+}
+
+button:active{
+	background-color: #effffa;
+}
+
+#scoreholder{
+	margin-top: 50px;
+	text-align: center;
+}
+
+#scoreholder{
+	display: none;
+}
+
+#flasher{
+	background-color: lime;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	opacity: .3;
+}
+
+.draweritem{
+	border-bottom: 1px solid #ed1c2f;
+	padding: 10px;
+}
+
+#socialshare{
+	font-family: arial;
+	font-size: 12px;
+	display: none;
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	bottom: 30px;
+	right: 30px;
+	background-color: white;
+	border: 3px solid #ed1c2f;
+	padding: 10px;
+	overflow-y: auto;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	z-index: 10;
+}
+
+#socialshare button{
+	padding: 10px;
+	background-color: #ed1c2f;
+	border: 3px solid #ed1c2f;
+	color: white;
+	margin: 10px;
+}

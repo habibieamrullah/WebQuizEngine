@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Kuis Fikih AB</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="jquery.js"></script>
+		<script src="howler.js"></script>
+		<script src="qa.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="app.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		
+		<script src="app.js"></script>
+		<style>
+			table{
+				border-collapse: collapse;
+			}
+			tr, th, td{
+				border: 1px solid white;
+				padding: 5px;
+			}
+		</style>
+		<style>#sendbtn{padding: 10px; background-color: green; color: white; border-radius: 3px; text-align: center;}#sendbtn:active{color: black;background-color: white;}.chatitem{border-top-left-radius: 0px;border-top-right-radius: 10px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: white;border: 1px color grey;margin-top: 5px;margin-bottom: 5px;padding: 10px;}</style>
+	</head>
+	<body>
+		<div id="appbar"><i class="fa fa-bars" aria-hidden="true" onclick="showDrawer()" style="margin-right: 20px;"></i>Web Quiz</div>
+	
+		
+		<div id="mainscreen">
+			<div id="quizholder"></div>
+			<div id="scoreholder">
+				<div style="font-size: 25px;"><span id="timer">100</span></div>
+				<div style="font-size: 18px;">Score: <span id="score">0</span></div>
+				<div style="font-size: 10px;">Highest Score: <span id="highscore">0</span></div>
+			</div>
+			<br>
+		</div>
+		
+		<div id="drawer">
+			<div onclick="restart()" class="draweritem"><i class="fa fa-home" aria-hidden="true" style="margin-right: 10px;"></i>Start!</div>
+			<br>
+			<div style="margin-bottom: 20px;">
+				<div style="font-size: 10px; color: white; margin-top: 114px;" align="center">
+					Developed by<br>habibieamrullah@gmail.com
+				</div>
+			</div>
+		</div>
+		
+		<div id="flasher"></div>
+		
+		<div id="notification"></div>
+		
+		<div id="socialshare">
+			<h1>About App</h1>
+			<p>Developed by habibieamrullah@gmail.com</p>
+		</div>
+		
+	</body>
+</html>
